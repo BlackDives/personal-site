@@ -1,0 +1,152 @@
+import React from "react"
+import {
+    Flex,
+    Button,
+    Text,
+    Box,
+    UnorderedList,
+    ListItem,
+    Link,
+    HStack,
+    SimpleGrid,
+} from "@chakra-ui/react"
+import reactDom from "react-dom"
+import { motion, isValidMotionProp } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import Boxes from "~components/KAm/boxes"
+
+const ProjectComponent = () => {
+    const vari = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+        },
+    }
+
+    //const controls = useAnimation();
+    //const { ref, inView } = useInView();
+    return (
+        <>
+            <Box
+                background={"#6411AD"}
+                margin={0}
+                overflowX={"hidden"}
+                id={"projects"}
+                fontFamily={"Trebuchet MS"}
+                display={"flex"}
+                alignContent={"center"}
+                justifyContent={"center"}
+                flexDirection={"column"}
+                padding={"2%"}
+            >
+                <Text
+                    textAlign={"center"}
+                    padding={"1.2rem"}
+                    fontSize={"2xl"}
+                    textDecoration={"underline"}
+                    color={"#fff"}
+                    textShadow={"1px 1px 2px black"}
+                >
+                    Check Out Some of My Stuff
+                </Text>
+                <SimpleGrid
+                    columns={[1, 2, 3, 3, 3]}
+                    //   display={"grid"}
+                    //   gridTemplateColumns={[1, 2, 3, 3, 3]}
+                    spacing={"1.2rem"}
+                    justifyContent={"center"}
+                    alignContent={"center"}
+                    width={"100%"}
+                >
+                    {/* <HStack>
+            <motion.div> */}
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 0, duration: 1 }}
+                        variants={vari}
+                    >
+                        <Boxes></Boxes>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 0.2, duration: 1 }}
+                        variants={vari}
+                    >
+                        <Boxes></Boxes>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 0.4, duration: 1 }}
+                        variants={vari}
+                    >
+                        <Boxes></Boxes>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 0.6, duration: 1 }}
+                        variants={vari}
+                    >
+                        <Boxes></Boxes>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 0.8, duration: 1 }}
+                        variants={vari}
+                    >
+                        <Boxes></Boxes>
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 1, duration: 2 }}
+                        variants={vari}
+                    >
+                        <Boxes></Boxes>
+                    </motion.div>
+                    {/* </motion.div>
+          </HStack> */}
+                </SimpleGrid>
+                <Link
+                    _hover={{ textDecoration: "none" }}
+                    _visited={{
+                        background:
+                            "linear-gradient(to right, #ff6e7f, #bfe9ff)",
+                    }}
+                    href={"https://github.com/BlackDives?tab=projects"}
+                    display={"grid"}
+                    gridTemplateColumns={"3"}
+                    target={"_blank"}
+                    padding={"1.2rem"}
+                >
+                    <Box
+                        gridColumnGap={["1", "2/3"]}
+                        width={"100%"}
+                        display={"flex"}
+                        flexDirection={"row"}
+                        justifyContent={"center"}
+                    >
+                        <Button
+                            background={"#822FAF"}
+                            color={"white"}
+                            fontSize={"lg"}
+                            padding={"1.5rem"}
+                            position={"static"}
+                            _hover={{ background: "#C05299" }}
+                        >
+                            Show All
+                        </Button>
+                    </Box>
+                </Link>
+            </Box>
+        </>
+    )
+}
+
+export default ProjectComponent
