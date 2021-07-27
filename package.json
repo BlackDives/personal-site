@@ -1,0 +1,57 @@
+{
+    "name": "gatsby-firebase-template",
+    "version": "1.0.0",
+    "private": false,
+    "description": "Template for a Gatsby site with firebase.",
+    "author": "Breach Software",
+    "keywords": [
+        "Valorant"
+    ],
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "postinstall": "link-module-alias"
+    },
+    "license": "0BSD",
+    "dependencies": {
+        "@chakra-ui/react": "^1.6.0",
+        "@emotion/react": "11",
+        "@emotion/styled": "11",
+        "emailjs-com": "^2.6.4",
+        "eslint": "^7.18.0",
+        "firebase": "^8.4.2",
+        "framer-motion": "4",
+        "gatsby": "^2.26.1",
+        "gatsby-image": "^2.10.0",
+        "gatsby-plugin-firebase": "^0.2.0-beta.4",
+        "gatsby-plugin-image": "^0.3.1",
+        "gatsby-plugin-manifest": "^2.11.0",
+        "gatsby-plugin-react-helmet": "^3.6.0",
+        "gatsby-plugin-sharp": "^2.10.1",
+        "gatsby-source-filesystem": "^2.7.0",
+        "gatsby-transformer-sharp": "^2.8.0",
+        "gsap": "^3.5.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-helmet": "^6.1.0",
+        "react-icons": "^4.1.0",
+        "react-intersection-observer": "^8.31.0",
+        "react-multi-carousel": "^2.6.1",
+        "react-scroll": "^1.8.1",
+        "react-ui-cards": "^2.0.0"
+    },
+    "devDependencies": {
+        "link-module-alias": "^1.2.0"
+    },
+    "_moduleAliases": {
+        "~components": "src/components",
+        "~config": "src/config",
+        "~images": "src/images",
+        "~pages": "src/pages",
+        "~utils": "src/utils",
+        "~models": "src/models"
+    }
+}
