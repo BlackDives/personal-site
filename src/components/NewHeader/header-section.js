@@ -61,6 +61,11 @@ const HeaderSection = () => {
                 <Flex pt={5}>
                     <Button
                         background={"transparent"}
+                        onClick={() => {
+                            document
+                                .getElementById("AboutMe")
+                                .scrollIntoView({ behavior: "smooth" })
+                        }}
                         _hover={{
                             background: "transparent",
                             transform: "scale(2)",

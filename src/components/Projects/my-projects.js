@@ -9,7 +9,8 @@ const MyProjects = () => {
             background={"#131313"}
             flexDirection={"column"}
             p={5}
-            pt={20}
+            pt={[20]}
+            id={"MyProjects"}
         >
             <Flex>
                 <Text color={"white"} fontSize={"xl"}>

@@ -14,11 +14,36 @@ const NewMobileNav = () => {
     const [isOpen, setOpen] = useState(false)
 
     const Links = [
-        { title: "HOME", link: "" },
-        { title: "ABOUT ME", link: "" },
-        { title: "PROJECTS", link: "" },
-        { title: "CONTACT", link: "" },
+        {
+            title: "HOME",
+            link: () =>
+                document
+                    .getElementById("Home")
+                    .scrollIntoView({ behavior: "smooth" }),
+        },
+        {
+            title: "ABOUT ME",
+            link: () =>
+                document
+                    .getElementById("AboutMe")
+                    .scrollIntoView({ behavior: "smooth" }),
+        },
+        {
+            title: "PROJECTS",
+            link: () =>
+                document
+                    .getElementById("MyProjects")
+                    .scrollIntoView({ behavior: "smooth" }),
+        },
+        {
+            title: "CONTACT",
+            link: () =>
+                document
+                    .getElementById("FooterSection")
+                    .scrollIntoView({ behavior: "smooth" }),
+        },
     ]
+
     {
         document.body.style.overflowY = isOpen ? "hidden" : "initial"
     }
@@ -76,8 +101,12 @@ const NewMobileNav = () => {
                             {Links.map(data => {
                                 return (
                                     <ListItem p={[5]}>
-                                        <Link
-                                            href={data.link}
+                                        <Button
+                                            onClick={() => {
+                                                data.link()
+                                                setOpen(!isOpen)
+                                            }}
+                                            background={"transparent"}
                                             color={"white"}
                                             fontSize={["md"]}
                                             fontWeight={"extrabold"}
@@ -85,10 +114,11 @@ const NewMobileNav = () => {
                                                 textDecoration: "none",
                                                 color: "#9518fc",
                                                 transition: "all 0.3 ease",
+                                                background: "transparent",
                                             }}
                                         >
                                             {data.title}
-                                        </Link>
+                                        </Button>
                                     </ListItem>
                                 )
                             })}

@@ -13,7 +13,7 @@ import List from "~components/KAm/list"
 
 const Footer = () => {
     return (
-        <Box height="42rem" background={"#131313"}>
+        <Box height="42rem" background={"#131313"} id={"FooterSection"}>
             <Box
                 display={"flex"}
                 justifyContent={"center"}
