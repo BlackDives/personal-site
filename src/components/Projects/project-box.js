@@ -61,6 +61,7 @@ const ProjectBox = ({ title, desc, delay, link }) => {
                             background={"#9518fc"}
                             borderRightRadius={0}
                             borderRadius={"20px"}
+                            _hover={{ background: "#9518fc", opacity: "0.5" }}
                         >
                             <FaGithub color={"white"} />
                         </Button>

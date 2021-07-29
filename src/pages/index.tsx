@@ -12,6 +12,7 @@ import {
 import HeaderPage from "~components/NewHeader/header-page"
 import AboutMe from "~components/AboutMe/about-me"
 import MyProjects from "~components/Projects/my-projects"
+import Footer from "~components/NewFooter/footer"
 
 const SirKamron = () => {
     return (
@@ -19,6 +20,7 @@ const SirKamron = () => {
             <HeaderPage />
             <AboutMe />
             <MyProjects />
+            <Footer />
         </>
     )
 }

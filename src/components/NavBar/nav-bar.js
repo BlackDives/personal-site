@@ -10,7 +10,13 @@ const NavBar = () => {
     ]
 
     return (
-        <Flex w={"100%"} height={["100px"]} background={"#131313"}>
+        <Flex
+            w={"100%"}
+            height={["100px"]}
+            overflowX={"hidden"}
+            background={"#131313"}
+            display={["none", "none", "none", "initial", "initial"]}
+        >
             <UnorderedList
                 display={"flex"}
                 flexDir={"row"}

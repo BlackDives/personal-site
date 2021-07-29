@@ -16,6 +16,7 @@ const MyProjects = () => {
             <Grid
                 gridTemplateColumns={"repeat(3, 1fr)"}
                 gridGap={5}
+                pt={10}
                 // gridTemplateRows={"repeat(3, 1fr)"}
             >
                 <ProjectBox
