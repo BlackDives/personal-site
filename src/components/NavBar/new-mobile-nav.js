@@ -7,6 +7,7 @@ import {
     ListItem,
     Link,
 } from "@chakra-ui/react"
+import ResponsiveBlock from "../shared/responsive-block"
 import Hamburger from "hamburger-react"
 
 const NewMobileNav = () => {
@@ -18,6 +19,9 @@ const NewMobileNav = () => {
         { title: "PROJECTS", link: "" },
         { title: "CONTACT", link: "" },
     ]
+    {
+        document.body.style.overflowY = isOpen ? "hidden" : "initial"
+    }
 
     return (
         <>
@@ -48,45 +52,49 @@ const NewMobileNav = () => {
                 </Flex>
             </Flex>
             {isOpen && (
-                <Flex
-                    height={"100vh"}
-                    width={"100%"}
-                    background={"#131313"}
-                    opacity={"0.9"}
-                    position={"absolute"}
-                    top={"100px"}
-                    zIndex={2}
-                    overflow={"hidden"}
-                >
-                    <UnorderedList
-                        display={"flex"}
-                        flexDir={"column"}
-                        listStyleType={"none"}
-                        w={"100%"}
-                        justifyContent={"flex-start"}
-                        alignItems={"center"}
+                <ResponsiveBlock background={"orange"}>
+                    <Flex
+                        height={"100vh"}
+                        width={"100%"}
+                        background={"#131313"}
+                        opacity={"0.9"}
+                        position={"absolute"}
+                        top={"100px"}
+                        left={0}
+                        zIndex={2}
+                        overflowX={"hidden"}
                     >
-                        {Links.map(data => {
-                            return (
-                                <ListItem p={[5]}>
-                                    <Link
-                                        href={data.link}
-                                        color={"white"}
-                                        fontSize={["md"]}
-                                        fontWeight={"extrabold"}
-                                        _hover={{
-                                            textDecoration: "none",
-                                            color: "#9518fc",
-                                            transition: "all 0.3 ease",
-                                        }}
-                                    >
-                                        {data.title}
-                                    </Link>
-                                </ListItem>
-                            )
-                        })}
-                    </UnorderedList>
-                </Flex>
+                        <UnorderedList
+                            display={"flex"}
+                            flexDir={"column"}
+                            listStyleType={"none"}
+                            w={"100%"}
+                            justifyContent={"flex-start"}
+                            alignItems={"center"}
+                            m={0}
+                        >
+                            {Links.map(data => {
+                                return (
+                                    <ListItem p={[5]}>
+                                        <Link
+                                            href={data.link}
+                                            color={"white"}
+                                            fontSize={["md"]}
+                                            fontWeight={"extrabold"}
+                                            _hover={{
+                                                textDecoration: "none",
+                                                color: "#9518fc",
+                                                transition: "all 0.3 ease",
+                                            }}
+                                        >
+                                            {data.title}
+                                        </Link>
+                                    </ListItem>
+                                )
+                            })}
+                        </UnorderedList>
+                    </Flex>
+                </ResponsiveBlock>
             )}
         </>
     )

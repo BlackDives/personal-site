@@ -6,7 +6,7 @@ import HeaderSection from "./header-section"
 
 const HeaderPage = () => {
     return (
-        <Flex direction={"column"}>
+        <Flex direction={"column"} w={"100%"}>
             <NewMobileNav />
             <NavBar />
             <HeaderSection />

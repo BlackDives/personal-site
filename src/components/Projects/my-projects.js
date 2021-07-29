@@ -4,7 +4,13 @@ import ProjectBox from "./project-box"
 
 const MyProjects = () => {
     return (
-        <Flex h={"100vh"} background={"#131313"} flexDirection={"column"} p={5}>
+        <Flex
+            // h={"100vh"}
+            background={"#131313"}
+            flexDirection={"column"}
+            p={5}
+            pt={20}
+        >
             <Flex>
                 <Text color={"white"} fontSize={"xl"}>
                     MY{" "}
@@ -14,10 +20,9 @@ const MyProjects = () => {
                 </Text>
             </Flex>
             <Grid
-                gridTemplateColumns={"repeat(3, 1fr)"}
+                gridTemplateColumns={["repeat(1, 1fr)", "repeat(3, 1fr)"]}
                 gridGap={5}
                 pt={10}
-                // gridTemplateRows={"repeat(3, 1fr)"}
             >
                 <ProjectBox
                     title={"CYPHER"}
