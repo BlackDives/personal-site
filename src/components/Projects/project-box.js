@@ -73,7 +73,6 @@ const ProjectBox = ({ title, desc, delay, link }) => {
                             <Link
                                 href={link}
                                 _hover={{ textDecoration: "none" }}
-                                _target="blank"
                             >
                                 {" "}
                                 <Text color={"white"}>View Live</Text>
