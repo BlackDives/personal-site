@@ -1,9 +1,10 @@
 import { extendTheme } from "@chakra-ui/react"
 import { createBreakpoints } from "@chakra-ui/theme-tools"
+import "@fontsource/kumbh-sans"
 
 const fonts = {
-    body: "Poppins",
-    heading: "Montserrat",
+    body: "Kumbh Sans",
+    heading: "Kumbh Sans",
 }
 
 const fontSizes = {

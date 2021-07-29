@@ -2062,6 +2062,11 @@
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.4.1.tgz#600f2275ff54739ad5ac0102f1467b8963cd5f71"
   integrity sha512-0yPjzuzGMkW1GkrC8yWsiN7vt1OzkMIi9HgxRmKREZl2wnNPOKo/yScTjXf/O57HM8dltqxPF6jlNLFVtc2qdw==
 
+"@fontsource/kumbh-sans@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-4.5.0.tgz#e41da3b9d2ecf73611ebf0dcffbcfe7097eb1a95"
+  integrity sha512-QzsixvRLBpk42p/1hcUcWXvs6yUAMNjJb3o9FSPyIK1nJgcBcdkxBJ8kSXRAqBNh04hAegEvDHkqsvhiYd4lNg==
+
 "@graphql-tools/batch-execute@^7.1.1":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-7.1.1.tgz#625681da409c7659634a48be8d5f8cf66ccbf25a"
