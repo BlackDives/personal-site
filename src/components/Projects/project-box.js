@@ -1,17 +1,24 @@
 import React from "react"
 import { Flex, Text, Button, Link } from "@chakra-ui/react"
 import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 import img from "~images/cypher-image.png"
 import { FaGithub } from "react-icons/fa"
 
 const ProjectBox = ({ title, desc, delay, link }) => {
+    const { ref, inView, entry } = useInView({ threshold: 0 })
+
     return (
         <motion.div
-            animate={{
-                y: [-50, 0],
-                scale: [1.1, 1],
-                opacity: [0, 1],
-            }}
+            animate={
+                inView
+                    ? {
+                          y: [-50, 0],
+                          scale: [1.1, 1],
+                          opacity: [0, 1],
+                      }
+                    : {}
+            }
             transition={{
                 ease: "easeInOut",
                 duration: 0.7,
@@ -26,6 +33,7 @@ const ProjectBox = ({ title, desc, delay, link }) => {
                 borderRadius={"20px"}
                 p={5}
                 h="100%"
+                ref={ref}
             >
                 <Flex
                     background={`${img}`}
