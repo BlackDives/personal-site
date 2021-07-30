@@ -44,10 +44,6 @@ const NewMobileNav = () => {
         },
     ]
 
-    {
-        document.body.style.overflowY = isOpen ? "hidden" : "initial"
-    }
-
     return (
         <>
             <Flex
