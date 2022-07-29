@@ -50,7 +50,7 @@ const AboutComponent = () => {
                     color={"white"}
                     padding={"2%"}
                 >
-                    I am from the Dallas area in the state of Texas and I am 19
+                    I am from the Dallas area in the state of Texas and I am 20
                     years old. I plan on pursuing a career in the field of
                     Software Engineering and this page will be used to display
                     my progress along the way.
