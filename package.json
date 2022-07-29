@@ -10,7 +10,7 @@
     "scripts": {
         "develop": "gatsby develop",
         "start": "gatsby develop",
-        "build": "tsc && gatsby build",
+        "build": "gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "postinstall": "link-module-alias"
