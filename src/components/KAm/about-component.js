@@ -22,7 +22,6 @@ const AboutComponent = () => {
             <Box
                 id={"About"}
                 background={"#47126B"}
-                // height={"100vh"}
                 fontFamily={"Trebuchet MS"}
             >
                 <Text
