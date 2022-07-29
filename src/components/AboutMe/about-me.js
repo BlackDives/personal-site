@@ -10,12 +10,12 @@ const AboutMe = () => {
     const x = useSpring(0, { stiffness: 300 })
 
     const Skills = [
-        { title: "REACT", level: inView ? 30 : 0 },
-        { title: "REACT NATIVE", level: 10 },
-        { title: "JAVA", level: 50 },
-        { title: "JAVASCRIPT", level: 25 },
-        { title: "WEBPACK", level: 10 },
-        { title: "GIT", level: 15 },
+        { title: "REACT", level: inView ? 50 : 0 },
+        { title: "REACT NATIVE", level: 40 },
+        { title: "ANGULAR", level: 20 },
+        { title: "ASP.NET", level: 10 },
+        { title: "SQL", level: 10 },
+        { title: "GraphQL", level: 20 },
     ]
 
     if (inView == true) {
@@ -120,7 +120,7 @@ const AboutMe = () => {
                         </Flex>
                         <Flex direction={"column"} pt={3}>
                             <Text color={"white"}>AGE</Text>
-                            <Text color={"#9518fc"}>19</Text>
+                            <Text color={"#9518fc"}>20</Text>
                         </Flex>
                         <Flex direction={"column"} pt={3}>
                             <Text color={"white"}>SCHOOL</Text>{" "}
